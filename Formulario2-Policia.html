@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policia de Asturias</title>
+</head>
+<body>
+    <form oninput="result.value = slider.value">
+        <fieldset>
+            <legend style="font-weight:bold; font-size: 24px; text-align:center;">Robo de Bicicletas</legend>
+            <label for="dia" >Dia:</label>
+            <input type="date" name="dia" title="Indique la fecha del suceso"><br><br>
+            <label for="hora">Hora:</label>
+            <input name="hora" type="time" title="Indique la hora del suceso"><br><br>
+            <label for="color">Color de la bicicleta:</label>
+            <input type="color" name="color" title="Indique el color"><br><br>
+            
+            <!-- <label>Select pressure</label><br/>
+            <input type="range" id="slider" min="0" max="100" step="10" value="30"> <br />
+            The value is <output name="result" for="slider">30</output> PSI -->
+
+            <label for="precio">Rango de precio</label>    
+            <input type="range" id="slider" min="1" max="10000" value="Precio"><br>
+            <output name="result" for="slider">Precio</output>
+            <label>Euros, valor aproximado</label>
+            <br><br>
+            <label for="tipobici">Tipo de bicicleta:</label><br><br>
+            <!--El tipo de bicicleta se define en el value de los options, el cual descansa sobre la variable "tipobici" en el label-->
+            <label>Paseo:</label>
+            <select name="tipobici">
+                <option value="señorial" title="Seleccione">Señorial</option>
+                <option value="plebeyos">Anti-plebeyos</option>
+                <option value="hombro">PorEncimaDelHombro</option>
+            </select>
+            <label>Montaña:</label>
+            <select name="tipobici">
+                <option value="gamusinos">Gamusinos</option>
+                <option value="premium">Hueleflores premium</option>
+                <option value="lover">Fango lover</option>
+            </select>
+            <label>Carreras:</label>
+            <select name="tipobici">
+                <option value="metro">Metroymedio</option>
+                <option value="tarde">3 de la tarde (fluorescente edition)</option>
+                <option value="grupitors">Grupitors</option>
+            </select><br><br>
+
+            <label for="accesorio">Accesorios:</label><br>
+            <Select name="accesorio" multiple>
+                <option value="ruedines">Ruedines</option>
+                <option value="pegatinas">Pegatinas</option>
+                <option value="cestita">Cestita</option>
+                <option value="bomba">Bomba de Aire</option>
+                <option value="timbre">Timbre</option>
+                <option value="foco">Foco</option>
+            </Select><br>
+            <!--  <label for="browser">Choose your browser from the list:</label>
+  <input list="browsers" name="browser" id="browser">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist> -->
+            <label for="marca">Que marca era?:</label>
+            <br>
+            <input list="marca" name="marca">
+            <datalist id="marca">
+              <option value="Orbea">
+              <option value="MX">
+              <option value="Honda">
+              <option value="Impact">
+            </datalist>
+
+        </fieldset>
+    </form>
+</body>
+</html>
